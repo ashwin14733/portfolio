@@ -173,7 +173,6 @@ a{
     padding: 160px 0px;
 }
 .abtright{
-    mar
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -279,6 +278,12 @@ a{
     margin: 70px 0px;
     flex-wrap: wrap; */
     /* width: 100%; */
+    /* display: flex;
+    flex-direction: column;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 20px; */
 }
 .work1{
     display: flex;
@@ -286,23 +291,41 @@ a{
     justify-content: space-evenly;
     margin: 70px 0px;
     flex-wrap: wrap;
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap; */
 }
 .work2{
+    
     display: flex;
     align-items: center;
-    width: 85%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    /* width: 85%;
     margin-left: auto;
-    margin-right: auto;
-    gap: 150px;
-    /* flex-wrap: wrap; */
-    
+    margin-right: auto; */
+    /* gap: 30px; */
+}
+.work3{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 70px 0px;
+
 }
 .card1{
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     margin-top: 20px;
+}
+.card1 img{
+    width: 100%; 
+    height: 300px;
 }
 
 .comic{
@@ -538,6 +561,14 @@ a{
     .firstname{
         padding-right: 100px;
     }
+    .card1 img{
+        width: 100%;
+        height: 250px;
+    }
+    .card1{
+        width: 95%;
+    }
+    
 
 }
 
