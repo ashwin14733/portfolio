@@ -290,6 +290,11 @@ a{
     display: flex;
     align-items: center;
     width: 85%;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 150px;
+    /* flex-wrap: wrap; */
     
 }
 .card1{
