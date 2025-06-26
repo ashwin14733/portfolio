@@ -1,17 +1,36 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #000814;
+    color: white;
+    scroll-behavior: smooth;
+    /**/
 }
-body{
+.container{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    
+}
+.black{
+     background-color: #000814; 
+}
+.nav{
+        width: 100%;
+}
+.st-sticky-color{
+            background-color: black;
+}
+.st-hero.st-style2{
+    background: url(assets/img/hero-bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 99vh;
+    
     
 }
 .nav{
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 .mainhead{
@@ -19,6 +38,8 @@ body{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* gap: 100px; */
+
     padding: 30px 0px;
 }
 .head1{
@@ -26,6 +47,11 @@ body{
     cursor: pointer;
 }
 .win{
+    
+    color: #ffc107;
+}
+.win1{
+    font-size: 25px;
     color: #ffc107;
 }
 .head2content{
@@ -67,7 +93,7 @@ a{
 
 
 #mainherosection{
-    padding: 165px 0px ;
+    padding: 15px 0px ;
 
 }
 .herosection{
@@ -75,15 +101,34 @@ a{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    flex-direction: column;
+    margin: 150px 0px;
+    justify-content: center;
 }
 .hello{
-    font-size: 25px;
+    font-size: 55px;
     padding: 10px 0px;
 }
 .ashwin{
     font-size: 35px;
     padding: 10px 0px;
 }
+ .leftherosection{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* margin-top: 10px; */
+    margin-bottom: 80px ;
+    
+ }
+ 
+ /* .rightherosection img{
+    width: 80%;
+    
+ } */
 .full{
     font-size: 35px;
     padding: 10px 0px;
@@ -92,6 +137,7 @@ a{
     font-size: 20px;
     padding: 10px 0px;
     width: 600px;
+    color: gray;
 }
 .images{
     display: flex;
@@ -99,6 +145,7 @@ a{
     flex-wrap: wrap;
     gap: 15px;
     padding: 20px 0px;
+    justify-content: center;
 }
 #aboutmemain{
     padding-top: 100px;
@@ -135,6 +182,8 @@ a{
     font-size: 20px;
     padding: 10px 0px;
     width: 650px;
+    letter-spacing: 0.6px;
+    line-height: 25px;
     /* width: auto; */
 
 }
@@ -146,6 +195,7 @@ a{
     border: none;
     margin: 10px 0px;
     cursor: pointer;
+    color: black;
 }
 #education{
     padding-top: 100px;
@@ -215,12 +265,32 @@ a{
 #myworksmain{
     padding: 100px 0px;
 }
+/* .mywork{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+} */
 .myworks{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 70px 0px;
+    flex-wrap: wrap; */
+    /* width: 100%; */
+}
+.work1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 70px 0px;
     flex-wrap: wrap;
+}
+.work2{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    
 }
 .card1{
     padding: 20px;
@@ -228,6 +298,7 @@ a{
     border-radius: 10px;
     margin-top: 20px;
 }
+
 .comic{
     font-size: 25px;
     padding: 10px 0px;
@@ -262,6 +333,15 @@ a{
     background-color: #caf0f8;
     border-radius: 5px;
     border: none;
+}
+.using3{
+    font-family: 15px;
+    color: #fdc500;
+    padding: 10px 20px;
+    background-color: #fffae5;
+    border-radius: 5px;
+    border: none;
+
 }
 .view{
     display: flex;
@@ -319,7 +399,7 @@ a{
     font-size: 20px;
     padding: 15px 0px;
 }
-.firstname{
+/* .firstname{
     font-size: 16px;
     background-color: white;
     border: none;
@@ -327,8 +407,18 @@ a{
     padding: 10px 20px;
     outline: none;
     margin-bottom: 50px
+} */
+ .firstname{
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    padding-right: 250px;
+    outline: none;
+    margin-bottom: 50px
 }
-.textarea{
+/* .textarea{
     width: 65%;
     background-color: white;
     color: grey;
@@ -336,11 +426,27 @@ a{
     padding: 20px;
     font-size: 16px;
     font-family: Arial,  sans-serif;
+} */
+ .textarea{
+    width: 71%;
+    background-color: white;
+    color: grey;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    font-family: Arial,  sans-serif;
+    outline: none;
 }
-.mainname{
+/* .mainname{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+} */
+ .mainname{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 190px;
 }
 .messagebox{
     display: flex;
@@ -386,6 +492,9 @@ a{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footerleft{
     display: flex;
@@ -404,5 +513,45 @@ a{
     .am1,.am{
         width: 100%;
     }
+    .footerleft{
+        font-size: 10px;
+    }
+    .footerleft img{
+        width: 5%;
+    }
+    .head1{
+        font-size: 25px;
+    }
+    .head2content{
+        font-size: 15px;
+        gap: 20px;
+    }
+    .mainname{
+        gap: 0px;
+    }
+    .firstname{
+        padding-right: 100px;
+    }
 
+}
+
+@media (min-width:700px) and (max-width: 880px){
+    .mainname{
+        gap: 0px;
+    }
+    .textarea{
+        width: 60%;
+    }
+    .mainbox{
+        gap: 75px;
+    }
+    .head2content{
+        gap: 40px;
+    }
+    .head1{
+        font-size: 25px;
+    }
+    .head3{
+        margin-top: 15px;
+    }
 }

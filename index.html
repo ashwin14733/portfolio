@@ -3,53 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="assets/css/animate.css" />
 </head>
 <body>
-    <nav class="nav">
-        <div class="mainhead">
-            <div class="head1">
-                <a href=""><p>Ash<span class="win">win</span></p></a>
-            </div>
-            <div class="head2">
-                <ul class="head2content">
-                    <li><a href="#mainherosection">Home</a></li>
-                    <li><a href="#aboutmemain">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#myskills">Skills</a></li>
-                    <li><a href="#myworksmain">Works</a></li>
-                    <li><a href="#contactmemain">Contact</a></li>
-                </ul>
-            </div>
-            <div class="head3">
-                <a href="Ashwin resume.webd.pdf"><button class="download">Download CV</button></a>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <section id="mainherosection">
-            <div class="herosection">
-               
-                <div class="leftherosection">
-                    <p class="hello">Hello!</p>
-                    <p class="ashwin">I am <span class="win">Ashwin</span></p>
-                    <p class="full">I'm a Full-Stack Developer</p>
-                    <p class="am">I'm a Skilled and Passionate Web Develpoer with experience in creating visually appealing and user-friendly websites</p>
-                    <div class="images">
-                        <a href="https://github.com/dashboard"><img src="Githubimage.png" alt="" width="30px"></a>
-                        <a href=""><img src="Likedin.png" alt="" width="30px"></a>
-                        <a href=""><img src="Instagram.png" alt="" width="30px"></a>
-                        <a href=""><img src="Facebook.png" alt="" width="30px"></a>
+    <div  class="st-hero st-style2 st-bg st-dynamic-bg st-ripple-version" data-src='assets/img/hero-bg-1.jpg'> 
+        <div class="container">
+          
+            <section id="mainherosection"  >
+                <div class="herosection">
+                    <div class="rightherosection">
+                        <img src="Ellipse 3 (1).png" alt="">
                     </div>
+                
+                    <div class="leftherosection">
+                        <p class="hello">Hello! I am <span class="win">Ashwin</span></p>
+                        <!-- <p class="ashwin"></p> -->
+                        <p class="full">I'm a Full-Stack Developer</p>
+                        <p class="am">I'm a Skilled and Passionate Web Develpoer with experience in creating visually appealing and user-friendly websites</p>
+                        <div class="images">
+                            <a href="https://github.com/dashboard"><img src="Githubimage.png" alt="" width="30px"></a>
+                            <a href=""><img src="Likedin.png" alt="" width="30px"></a>
+                            <a href=""><img src="Instagram.png" alt="" width="30px"></a>
+                            <a href=""><img src="Facebook.png" alt="" width="30px"></a>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="rightherosection">
-                    <img src="Ellipse 3 (1).png" alt="">
+            </section>
+        </div>
+          <nav class="nav">
+                <div class="container">
+                    <div class="mainhead">
+                        <div class="head1">
+                            <a href=""><p>Ash<span class="win">win</span></p></a>
+                        </div>
+                        <div class="head2">
+                            <ul class="head2content">
+                                <li><a href="#mainherosection">Home</a></li>
+                                <li><a href="#aboutmemain">About</a></li>
+                                <li><a href="#education">Education</a></li>
+                                <li><a href="#myskills">Skills</a></li>
+                                <li><a href="#myworksmain">Works</a></li>
+                                <li><a href="#contactmemain">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="head3">
+                            <a href="Ashwin resume.webd.pdf" target="_blank"><button class="download">Download CV</button></a>
+                        </div>
+                    </div>          
                 </div>
-            </div>
-        </section>
-
+            </nav>
+     
+    </div>
+    <div class="black">
+ <main>
+        
         <section>
             <div id="aboutmemain">
                 <div class="aboutme">
@@ -61,7 +71,8 @@
                         <img src="Rectangle 25.png" alt="" style="border-radius: 10px;">
                     </div>
                     <div class="abtright">
-                        <p class="ashwin">I am  <span class="win">Ashwin</span></p>
+                        <p class="ashwin">Hi There! I am  Ashwin</p>
+                        <p ><span class="win1">Full-Stack Developer</span></p>
                         <p class="am1">I'm a Full-Stack Developer.Proficient in HTML, CSS, JavaScript, Boostrap, ReactJs, Nodejs, Wordpress, MongoDB, Figma and responsive design frameworks. I create visually enticing user interface. Feel free to explore my portfolio to get a glimpse of my work. If you have a project or an idea you'd like to discuss, I'm always open to new opportunities and collaborations.</p>
                         <a href="#contactmemain"><button class="hireme">Hire Me ➤</button></a>
                     </div>
@@ -176,7 +187,7 @@
                     <img src="Wordpress.png" alt="" width="45px" height="45px">
                 </div>
             </div>
-        </div>
+       
        </section>
        <section id="myworksmain">
         <div>
@@ -184,30 +195,62 @@
             <div class="bottomline"></div>
         </div>
         <div class="myworks">
-            <div class="card1">
-                <img src="SinglePage.png" alt="" style="border-radius: 10px; width: 100%;">
-                <p class="comic">Comic Website</p>
-                <p class="dev">Developed a responsive Single page Comic website using HTML and CSS</p>
-                <div class="using">
-                    <button class="using1">HTML</button>
-                    <button class="using2">CSS</button>
+            <div class="work1">
+                <div class="card1">
+                    <img src="SinglePage.png" alt="" style="border-radius: 10px; width: 100%;">
+                    <p class="comic">Comic Website</p>
+                    <p class="dev">Developed a responsive Single page Comic website using HTML and CSS</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/dracomics/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/dracomics.git"><button class="sourcecode">Source Code</button></a>
+                    </div>
                 </div>
-                <div class="view">
-                    <a class="a" href="https://ashwin14733.github.io/dracomics/"><button class="viewdemo">View Demo</button></a>
-                    <a class="a" href="https://github.com/ashwin14733/dracomics.git"><button class="sourcecode">Source Code</button></a>
+                <div class="card1">
+                    <img src="MultiPage.png" alt="" style="border-radius: 10px;width: 100%; "  >
+                    <p class="comic">Library Website</p>
+                    <p class="dev">Developed a responsive AI website using HTML and CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/nigga/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/nigga.git"><button class="sourcecode">Source Code</button></a>
+                    </div>
                 </div>
             </div>
-            <div class="card1">
-                <img src="MultiPage.png" alt="" style="border-radius: 10px;width: 100%; "  >
-                <p class="comic">Library Website</p>
-                <p class="dev">Developed a responsive Library website using HTML and CSS</p>
-                <div class="using">
-                    <button class="using1">HTML</button>
-                    <button class="using2">CSS</button>
+            <div class="work2">
+                <div class="card1">
+                    <img src="./ai.png" alt="" style="border-radius: 10px; "  >
+                    <p class="comic">AI Website</p>
+                    <p class="dev">Developed a responsive Library website using HTML, CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/grandpa-ai/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/grandpa-ai"><button class="sourcecode">Source Code</button></a>
                 </div>
-                <div class="view">
-                    <a class="a" href="https://ashwin14733.github.io/nigga/"><button class="viewdemo">View Demo</button></a>
-                    <a class="a" href="https://github.com/ashwin14733/nigga.git"><button class="sourcecode">Source Code</button></a>
+            </div>
+                <div class="card1">
+                    <img src="./firebase.png" alt="" style="border-radius: 10px;"  >
+                    <p class="comic">Firebase Website</p>
+                    <p class="dev">Developed a responsive Firebase Website using HTML CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/firebase/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/firebase"><button class="sourcecode">Source Code</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -292,7 +335,15 @@
             </div>
         </div>
     </footer>
-     
+     </div>
+    </div>
+
+
+   
+       <script src="assets/js/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/ripples.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
 
