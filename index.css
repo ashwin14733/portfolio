@@ -9,29 +9,39 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+        z-index: 2;
+
     
 }
 .black{
-     background-color: #000814; 
+     /* background-color: #000814;  */
+     background-color: #0a101e;
 }
 .nav{
         width: 100%;
+        z-index: 2;
 }
 .st-sticky-color{
-            background-color: black;
+    /* background-color: black; */
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(225, 165, 0, 0.2);
+    box-shadow: 0 0 20px rgba(211, 148, 32, 0.5);
+    /* z-index: 3; */
 }
 .st-hero.st-style2{
     background: url(assets/img/hero-bg-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 99vh;
+    height: 100vh;
     
     
 }
 .nav{
     position: fixed;
     top: 0;
+    z-index: 2;
+
 }
 .mainhead{
     display: flex;
@@ -39,12 +49,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     /* gap: 100px; */
+    z-index: 2;
+
 
     padding: 30px 0px;
 }
 .head1{
     font-size: 35px;
     cursor: pointer;
+    z-index: 2;
+
 }
 .win{
     
@@ -61,11 +75,15 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 80px;
+    z-index: 2;
+
     
 }
 .head2content li a {
     color: white;
     transition: color 0.3s ease;
+    z-index: 2;
+
 }
 
 
@@ -79,6 +97,8 @@ li:hover::after, li:hover::before {
 a{
     text-decoration: none;
     color: white;
+    z-index: 2;
+
 
 }
 .download{
@@ -89,6 +109,8 @@ a{
     border: none;
     border-radius: 12px;
     font-family: Arial, sans-serif;
+    z-index: 2;
+
 }
 
 
@@ -149,6 +171,7 @@ a{
 }
 #aboutmemain{
     padding-top: 100px;
+    z-index: -1;
 }
 .aboutme{
     text-align: center;
@@ -171,12 +194,15 @@ a{
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 160px 0px;
+    z-index: -2;
+
 }
 .abtright{
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 20px;
+
 }
 .am1{
     font-size: 20px;
@@ -185,6 +211,7 @@ a{
     letter-spacing: 0.6px;
     line-height: 25px;
     /* width: auto; */
+
 
 }
 .hireme{
@@ -196,11 +223,12 @@ a{
     margin: 10px 0px;
     cursor: pointer;
     color: black;
+    
 }
 #education{
     padding-top: 100px;
 }
-.mainbox{
+/* .mainbox{
     display: flex;
     align-items: start;
     flex-wrap: wrap;
@@ -210,8 +238,9 @@ a{
 }
 .box1{
     display: flex;
-    flex-direction: column;
-    gap: 60px;
+    flex-wrap: wrap;
+    gap: 350px;
+    justify-content: space-around;
     margin-top: 5px;
 }
 .oneleft{
@@ -227,6 +256,7 @@ a{
     align-items: start;
     flex-direction: column;
     gap: 10px;
+    
 }
 .webdesign{
     font-size: 28px;
@@ -234,10 +264,46 @@ a{
 .webd{
     color: #FEC544;
     font-size: 18px;
+} */
+ .mainbox {
+  display: flex;
+  flex-direction: column; /* stack each row vertically */
+  gap: 50px;
+  margin: 100px 50px 150px 450px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: flex-start; /* align items in a row */
+  align-items: flex-start;
+  gap: 100px; /* small consistent gap between date and content */
+  justify-items: center;
+}
+
+.oneleft {
+  font-size: 28px;
+  width: 200px; /* fixed width so all dates align vertically */
+}
+
+.box22 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.webdesign {
+  font-size: 28px;
+}
+
+.webd {
+  color: #FEC544;
+  font-size: 18px;
 }
 #myskills{
     padding-top: 100px;
     padding-bottom: 50px;
+    z-index: -2;
+
 }
 .mainskills1{
     display: flex;
@@ -258,12 +324,17 @@ a{
     width: 300px;
 
 }
+.skill1 img{
+    z-index: -1;
+}
 .html{
     font-size: 25px;
     width: 150px;
 }
 #myworksmain{
     padding: 100px 0px;
+    z-index: 2;
+
 }
 /* .mywork{
     width: 85%;
@@ -284,6 +355,8 @@ a{
     max-width: 1400px;
     margin: 80px auto;
     padding: 0 20px; */
+    z-index: -2;
+
 }
 .work1{
     display: flex;
@@ -291,6 +364,7 @@ a{
     justify-content: space-evenly;
     margin: 70px 0px;
     flex-wrap: wrap;
+    z-index: -2;
     
     /* display: flex;
     justify-content: center;
@@ -317,15 +391,31 @@ a{
     margin: 70px 0px;
 
 }
-.card1{
+/* .card1{
     padding: 20px;
     background-color: white;
     border-radius: 10px;
     margin-top: 20px;
+} */
+ .card1{
+    background: white; 
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+ }
+.card1:hover {
+  transform: translateY(-5px);
 }
 .card1 img{
     width: 100%; 
     height: 300px;
+     object-fit: cover;
+    border-radius: 10px;
 }
 
 .comic{
@@ -567,6 +657,23 @@ a{
     }
     .card1{
         width: 95%;
+    }
+    .mainbox{
+        margin: 50px 40px;
+        font-size: 15px;
+    }
+    .box1{
+        justify-content: space-between;
+    }
+    .box22{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .oneleft,.webdesign{
+        font-size: 25px;
+    }
+    .webd{
+        font-size: 15px;
     }
     
 
