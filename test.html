@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="assets/css/animate.css" />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+      <style>
+        *{
+    margin: 0;
+    padding: 0;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+.black{
+    background-color: #0a101e;
+}
+
+.nav{
+    width: 100%;
+}
+
+.st-sticky-color{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(225, 165, 0, 0.2);
+    box-shadow: 0 0 20px rgba(211, 148, 32, 0.5);
+}
+
+.st-hero.st-style2{
+    background: url(assets/img/hero-bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.mainhead{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 2;
+    padding: 15px 0px;
+}
+
+.head1{
+    font-size: clamp(25px, 5vw, 35px);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.win{
+    color: #ffc107;
+}
+
+.win1{
+    font-size: clamp(20px, 4vw, 25px);
+    color: #ffc107;
+}
+
+.head2content{
+    font-size: clamp(16px, 2.5vw, 20px);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: clamp(20px, 5vw, 80px);
+    z-index: 2;
+}
+
+.head2content li a {
+    color: white;
+    transition: color 0.3s ease;
+    z-index: 2;
+}
+
+.head2content li a:hover{
+    color: #ffc107;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+}
+
+.download{
+    padding: 10px 20px;
+    font-size: clamp(14px, 2vw, 16px);
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#mainherosection{
+    padding: 15px 0px;
+}
+
+.herosection{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 150px 0px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hello{
+    font-size: clamp(30px, 6vw, 55px);
+    padding: 10px 0px;
+}
+
+.ashwin{
+    font-size: clamp(25px, 4vw, 35px);
+    padding: 10px 0px;
+}
+
+.leftherosection{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    max-width: 100%;
+}
+
+.full{
+    font-size: clamp(25px, 4vw, 35px);
+    padding: 10px 0px;
+}
+
+.am{
+    font-size: clamp(16px, 2.5vw, 20px);
+    padding: 10px 0px;
+    max-width: 600px;
+    width: 100%;
+    color: gray;
+}
+
+.images{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0px;
+    justify-content: center;
+}
+
+#aboutmemain{
+    padding-top: 100px;
+    z-index: -1;
+}
+
+.aboutme{
+    text-align: center;
+    font-size: clamp(24px, 4vw, 30px);
+    color: #FEC544;
+    text-transform: uppercase;
+}
+
+.bottomline{
+    height: 4px;
+    width: min(230px, 80%);
+    margin: 15px auto;
+    background: linear-gradient(to right, #888888 0%, #888888 20%, #FEC544 20%, #FEC544 80%, #888888 80%, #888888 100%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.abtmain{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 80px 20px;
+    gap: 40px;
+    z-index: -2;
+}
+
+.abtleft img{
+    max-width: 100%;
+    height: auto;
+}
+
+.abtright{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 650px;
+}
+
+.am1{
+    font-size: clamp(16px, 2.5vw, 20px);
+    padding: 10px 0px;
+    width: 100%;
+    letter-spacing: 0.6px;
+    line-height: 1.6;
+}
+
+.hireme{
+    padding: 10px 20px;
+    background-color: #ffc107;
+    font-size: clamp(14px, 2vw, 16px);
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    cursor: pointer;
+    color: black;
+}
+
+#education{
+    padding-top: 100px;
+}
+
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 100px 20px 150px 20px;
+    padding: 0 20px;
+}
+
+.box1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: clamp(20px, 5vw, 100px);
+    flex-wrap: wrap;
+}
+
+.oneleft {
+    font-size: clamp(20px, 3.5vw, 28px);
+    min-width: 150px;
+    flex-shrink: 0;
+}
+
+.box22 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.webdesign {
+    font-size: clamp(20px, 3.5vw, 28px);
+}
+
+.webd {
+    color: #FEC544;
+    font-size: clamp(16px, 2.5vw, 18px);
+}
+
+#myskills{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    z-index: -2;
+}
+
+.mainskills1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 80px 20px;
+    gap: 40px;
+}
+
+.skill1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(50px, 10vw, 150px);
+    padding: 5px 5px;
+    border-bottom: 3px solid grey;
+    padding-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.skill1 img{
+    z-index: -1;
+    flex-shrink: 0;
+}
+
+.html{
+    font-size: clamp(20px, 3vw, 25px);
+    width: 150px;
+}
+
+#myworksmain{
+    padding: 100px 20px;
+    z-index: 2;
+}
+
+.myworks{
+    z-index: -2;
+}
+
+.work1, .work2, .work3{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 70px 0px;
+    gap: 40px;
+}
+
+.card1{
+    background: white; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+    max-width: 450px;
+    width: 100%;
+}
+
+.card1:hover {
+    transform: translateY(-5px);
+}
+
+.card1 img{
+    width: 100%; 
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.comic{
+    font-size: clamp(20px, 3vw, 25px);
+    padding: 10px 0px;
+    background-color: white;
+    color: black; 
+}
+
+.dev{
+    font-size: clamp(16px, 2.5vw, 18px);
+    margin-bottom: 10px;
+    background-color: white;
+    color: black;
+}
+
+.using{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.using1, .using2, .using3{
+    font-size: clamp(13px, 2vw, 15px);
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.using1{
+    color: #FF6C22;
+    background-color: #FFE3BB;
+}
+
+.using2{
+    color: #0077b6;
+    background-color: #caf0f8;
+}
+
+.using3{
+    color: #fdc500;
+    background-color: #fffae5;
+}
+
+.view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.viewdemo, .sourcecode{
+    color: black;
+    font-size: clamp(14px, 2vw, 16px);
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    flex: 1;
+    min-width: 120px;
+}
+
+.viewdemo{
+    background-color: #ffc107;
+    border: none;
+}
+
+.sourcecode{
+    border: 2px solid #ffc107;
+    background-color: white;
+}
+
+.sourcecode:hover{
+    background-color: #ffc107;
+}
+
+.a{
+    background-color: white;
+    flex: 1;
+}
+
+#contactmemain{
+    padding-top: 100px;
+}
+
+.contactme{
+    margin: 80px 20px;
+}
+
+.name{
+    font-size: clamp(18px, 2.5vw, 20px);
+    padding: 15px 0px;
+}
+
+.firstname{
+    font-size: clamp(14px, 2vw, 16px);
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.textarea{
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    color: grey;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: clamp(14px, 2vw, 16px);
+    font-family: Arial, sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.mainname{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(20px, 5vw, 100px);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.mainname > div{
+    flex: 1;
+    min-width: 250px;
+}
+
+.messagebox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit{
+    color: black;
+    background-color: #ffc107;
+    padding: 12px 30px;
+    font-size: clamp(14px, 2vw, 16px);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.footermain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.footerleft{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.footerleft img{
+    width: 20px;
+    height: auto;
+}
+
+.footerright{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.swal2-success-circular-line-left,.swal2-success-fix,.swal2-success-circular-line-right{
+    display: none;
+}
+
+/* Mobile Devices (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .container{
+        width: 95%;
+    }
+    
+    .mainhead{
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .head2content{
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .head3{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .herosection{
+        margin: 100px 0px 50px;
+    }
+    
+    .rightherosection img{
+        max-width: 250px;
+    }
+    
+    .abtmain{
+        padding: 40px 10px;
+    }
+    
+    .mainbox{
+        margin: 50px 10px 80px 10px;
+        gap: 30px;
+    }
+    
+    .box1{
+        gap: 20px;
+    }
+    
+    .mainskills1{
+        margin: 40px 10px;
+        gap: 30px;
+    }
+    
+    .skill1{
+        max-width: 100%;
+        width: 100%;
+        gap: 30px;
+    }
+    
+    .card1{
+        margin: 0 10px;
+    }
+    
+    .work1, .work2, .work3{
+        margin: 40px 0px;
+        gap: 30px;
+    }
+    
+    .view{
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .viewdemo, .sourcecode, .a{
+        width: 100%;
+    }
+    
+    .mainname{
+        gap: 0px;
+    }
+    
+    .mainname > div{
+        min-width: 100%;
+    }
+}
+
+/* Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .mainhead{
+        gap: 20px;
+    }
+    
+    .head2content{
+        gap: 25px;
+    }
+    
+    .herosection{
+        margin: 120px 0px 60px;
+    }
+    
+    .abtmain{
+        padding: 60px 20px;
+    }
+    
+    .mainbox{
+        margin: 80px 30px 100px 30px;
+    }
+    
+    .mainskills1{
+        justify-content: space-around;
+        gap: 40px;
+    }
+    
+    .skill1{
+        width: calc(50% - 20px);
+        min-width: 250px;
+    }
+    
+    .card1{
+        width: calc(50% - 30px);
+        min-width: 300px;
+    }
+    
+    .mainname > div{
+        min-width: 280px;
+    }
+}
+
+/* iPads and Small Tablets (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .head2content{
+        gap: 35px;
+    }
+    
+    .mainbox{
+        margin: 100px 50px 120px 100px;
+    }
+    
+    .skill1{
+        width: calc(33.33% - 30px);
+        min-width: 250px;
+    }
+    
+    .card1{
+        width: calc(50% - 30px);
+        max-width: 400px;
+    }
+    
+    .textarea{
+        width: 85%;
+    }
+}
+
+/* Large Tablets and Small Desktops (1025px - 1280px) */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .mainbox{
+        margin: 100px 50px 150px 200px;
+    }
+    
+    .card1{
+        width: calc(50% - 30px);
+        max-width: 450px;
+    }
+}
+
+/* Desktop (1281px and above) */
+@media screen and (min-width: 1281px) {
+    .mainbox{
+        margin: 100px 50px 150px 450px;
+    }
+    
+    .card1{
+        width: calc(50% - 30px);
+        max-width: 500px;
+    }
+}
+
+/* Landscape Mode Adjustments */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .herosection{
+        margin: 80px 0px 40px;
+    }
+    
+    #aboutmemain, #education, #myskills, #myworksmain, #contactmemain{
+        padding-top: 60px;
+    }
+    
+    .abtmain{
+        padding: 40px 20px;
+    }
+}
+      </style>
+
+</head>
+<body>
+    <div  class="st-hero st-style2 st-bg st-dynamic-bg st-ripple-version" data-src='assets/img/hero-bg-1.jpg'> 
+        <div class="container">
+          
+           
+        </div>
+          <nav class="nav">
+                <div class="container">
+                    <div class="mainhead">
+                        <div class="head1">
+                            <a href=""><p>Ash<span class="win">win</span></p></a>
+                        </div>
+                        <div class="head2">
+                            <ul class="head2content">
+                                <li><a href="#mainherosection">Home</a></li>
+                                <li><a href="#aboutmemain">About</a></li>
+                                <li><a href="#education">Education</a></li>
+                                <li><a href="#myskills">Skills</a></li>
+                                <li><a href="#myworksmain">Works</a></li>
+                                <li><a href="#contactmemain">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="head3">
+                            <a href="./Ashwin Fullstack resume.pdf" target="_blank"><button class="download">Download CV</button></a>
+                        </div>
+                    </div>          
+                </div>
+            </nav>
+             <section id="mainherosection"  >
+                <div class="herosection">
+                    <div class="rightherosection">
+                        <img src="Ellipse 3 (1).png" alt="">
+                    </div>
+                
+                    <div class="leftherosection" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                        <p class="hello">Hello! I am <span class="win">Ashwin</span></p>
+                        <!-- <p class="ashwin"></p> -->
+                        <p class="full">Full-Stack Developer</p>
+                        <p class="am">I'm a Skilled and Passionate Web Develpoer with experience in creating visually appealing and user-friendly websites</p>
+                        <div class="images">
+                            <a href="https://github.com/ashwin14733" target="_blank"><img src="Githubimage.png" alt="" width="30px"></a>
+                            <a href="http://www.linkedin.com/in/ashwin-a-754074368" target="_blank"><img src="Likedin.png" alt="" width="30px"></a>
+                            <a href="https://www.instagram.com/mr._sinner_/" target="_blank"><img src="Instagram.png" alt="" width="30px"></a>
+                            <a href=""><img src="Facebook.png" alt="" width="30px"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+     
+    </div>
+    <div class="black">
+ <main>
+        
+        <section>
+            <div id="aboutmemain">
+                <div class="aboutme" data-aos="fade-down" data-aos-duration="1400" >
+                    <p>About Me</p>
+                    <div class="bottomline"></div>
+                </div>
+                <div class="abtmain">
+                    <div class="abtleft" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" >
+                        <img src="Rectangle 25.png" alt="" style="border-radius: 10px;">
+                    </div>
+                    <div class="abtright" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" >
+                        <p class="ashwin" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">Hi There! I am  Ashwin</p>
+                        <p ><span class="win1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1600">Full-Stack Developer</span></p>
+                        <p class="am1" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">I'm a Full-Stack Developer.Proficient in HTML, CSS, JavaScript, Boostrap, ReactJs, Nodejs, Wordpress, MongoDB, Figma and responsive design frameworks. I create visually enticing user interface. Feel free to explore my portfolio to get a glimpse of my work. If you have a project or an idea you'd like to discuss, I'm always open to new opportunities and collaborations.</p>
+                        <a href="#contactmemain"><button class="hireme" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">Hire Me ➤</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+                <p class="aboutme">Education</p>
+                <div class="bottomline"></div>
+            </div>
+            <div class="mainbox">
+                <div class="box1">
+                    <p class="oneleft" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="600">2025 - Present</p>
+                    <div class="box22">
+                        <div class="webdesign" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="600">Full-Stack Development</div>
+                        <p class="webd" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="600">Web D School </p>
+                    </div>
+
+                </div>
+                <div class="box1">
+                    <p class="oneleft" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">2021 - 2025</p>
+                    <div class="box22">
+                        <p class="webdesign" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">B.E Computer Science and Engineering</p>
+                        <p class="webd" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">KCG College of Technology</p>
+                    </div>
+                </div>
+                 <div class="box1">
+                    <p class="oneleft" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1400">2020 - 2021</p>
+                    <div class="box22">
+                        <p class="webdesign" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1400">Higher Secondary Education</p>
+                        <p class="webd" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1400">ST. Antony's Matric Hr. Sec. School</p>
+                    </div>
+                </div>
+                 <div class="box1">
+                    <p class="oneleft" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1800">2019 - 2020</p>
+                    <div class="box22">
+                        <p class="webdesign" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1800">SSLC</p>
+                        <p class="webd" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1800">ST. Antony's Matric Hr. Sec. School</p>
+                    </div>
+                </div>
+                <!-- <div class="box1">
+                    <p class="oneleft">2025 - Present</p>
+                    <p class="oneleft" style="margin-top: 10px;">2021 - 2025</p>
+                    <p class="oneleft" style="margin-top: 10px;">2020 - 2021</p>
+                    <p class="oneleft" style="margin-top: 5px;">2018 - 2019</p>
+                </div>
+                <div class="box2">
+                    <div class="box22">
+                        <p class="webdesign">Web Design and Development</p>
+                        <p class="webd">Web D School </p>
+                    </div>
+                    <div class="box22">
+                        <p class="webdesign">B.E Computer Science and Engineering</p>
+                        <p class="webd">KCG College of Technology</p>
+                        </div>
+                    <div class="box22">
+                        <p class="webdesign">XII (HSE)</p>
+                        <p class="webd">ST. Antony's Matric Hr. Sec School</p>
+                    </div>
+                    <div class="box22">
+                        <p class="webdesign">X (SSLC)</p>
+                        <p class="webd">ST. Antony's Matric Hr. Sec School</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+            
+       <section id="myskills">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+            <p class="aboutme">My Skills</p>
+            <div class="bottomline"></div>
+        </div>
+        <div class="mainskills">
+            <div class="mainskills1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="600">
+                <div class="skill1" >
+                    <p class="html" >HTML</p>
+                    <img src="HTML.png" alt="" width="35px" height="35px" >
+                </div>
+                <div class="skill1">
+                    <p class="html">CSS</p>
+                    <img src="Css.png" alt="" width="40px" height="40px">
+                </div>
+                <div class="skill1">
+                    <p class="html">JavaScript</p>
+                    <img src="Javascript.png" alt="" width="35px" height="35px">
+                </div>
+            </div>
+            <div class="mainskills1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="800">
+                <div class="skill1">
+                    <p class="html">Bootstrap</p>
+                    <img src="Bootstrap.png" alt="" width="40px" height="40px" >
+                </div>
+                <div class="skill1">
+                    <p class="html">JQuery</p>
+                    <img src="Jquery.png" alt="" width="30px" height="30px">
+                </div>
+                <div class="skill1">
+                    <p class="html">Reactjs</p>
+                    <img src="React.png" alt="" width="40px" height="40px">
+                </div>
+            </div>
+            <div class="mainskills1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1200">
+                <div class="skill1">
+                    <p class="html">Nodejs</p>
+                    <img src="Nodejs.png" alt="" width="40px" height="40px" >
+                </div>
+                <div class="skill1">
+                    <p class="html">Expressjs</p>
+                    <img src="Expressjs.png" alt="" width="50px" height="50px">
+                </div>
+                <div class="skill1">
+                    <p class="html">MongoDB</p>
+                    <img src="Mongodb.png" alt="" width="35px" height="35px">
+                </div>
+            </div>
+             <div class="mainskills1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1600">
+                <div class="skill1">
+                    <p class="html">Python</p>
+                    <img src="Python.png" alt="" width="45px" height="45px" >
+                </div>
+                <div class="skill1">
+                    <p class="html">My SQL</p>
+                    <img src="Mysql.png" alt="" width="45px" height="35px">
+                </div>
+                <div class="skill1">
+                    <p class="html">AJAX</p>
+                    <img src="Ajax.png" alt="" width="45px" height="45px">
+                </div>
+            </div>
+            </div> 
+            <div class="mainskills1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="2000">
+                <div class="skill1">
+                    <p class="html">Figma</p>
+                    <img src="Figma.png" alt="" width="30px" height="30px" >
+                </div>
+                <div class="skill1">
+                    <p class="html">Photoshop</p>
+                    <img src="Photoshop.png" alt="" width="45px" height="45px">
+                </div>
+                <div class="skill1">
+                    <p class="html">Wordpress</p>
+                    <img src="Wordpress.png" alt="" width="45px" height="45px">
+                </div>
+            </div>
+       
+       </section>
+       <section id="myworksmain">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+            <p class="aboutme">My Works</p>
+            <div class="bottomline"></div>
+        </div>
+        <div class="myworks">
+            <div class="work1">
+                <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="SinglePage.png" alt="" style="border-radius: 10px; ">
+                    <p class="comic">Comic Website</p>
+                    <p class="dev">Developed a responsive Single page Comic website using HTML and CSS</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/dracomics/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/dracomics.git"><button class="sourcecode">Source Code</button></a>
+                    </div>
+                </div>
+                <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="MultiPage.png" alt="" style="border-radius: 10px;width: 100%; height: 300px;"  >
+                    <p class="comic">Library Website</p>
+                    <p class="dev">Developed a responsive Library website using HTML and CSS </p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/nigga/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/nigga.git"><button class="sourcecode">Source Code</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work2">
+                <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="./ai.png" alt="" style="border-radius: 10px; width: 100%; height: 300px;"  >
+                    <p class="comic">AI Website</p>
+                    <p class="dev">Developed a responsive AI website using HTML, CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/grandpa-ai/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/grandpa-ai"><button class="sourcecode">Source Code</button></a>
+                </div>
+            </div>
+            <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                <img src="./firebase.png" alt="" style="border-radius: 10px; width: 100%; height: 300px;"  >
+                <p class="comic">Firebase Form Registration Website</p>
+                <p class="dev">Developed a responsive Firebase Website using HTML CSS and JavaScript</p>
+                <div class="using">
+                    <button class="using1">HTML</button>
+                    <button class="using2">CSS</button>
+                    <button class="using3">Javascript</button>
+                </div>
+                <div class="view">
+                    <a class="a" href="https://ashwin14733.github.io/firebase/"><button class="viewdemo">View Demo</button></a>
+                    <a class="a" href="https://github.com/ashwin14733/firebase"><button class="sourcecode">Source Code</button></a>
+                </div>
+            </div>
+            </div>
+            <div class="work3" >
+                <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="./map.png" alt="" style="border-radius: 10px; width: 100%; height: 300px;"  >
+                    <p class="comic">Navigation Website</p>
+                    <p class="dev">Developed a responsive Google map  website using HTML, CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/map/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/map"><button class="sourcecode">Source Code</button></a>
+                    </div>
+                </div>
+                <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="./anime.png" alt="" style="border-radius: 10px; width: 100%; height: 300px;"  >
+                    <p class="comic">Anime Website</p>
+                    <p class="dev">Developed a responsive Anime Website using HTML CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/anime_api/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/anime_api"><button class="sourcecode">Source Code</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work3">
+                <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="./memorygame.png" alt="" style="border-radius: 10px; width: 100%; height: 300px;"  >
+                    <p class="comic">Memory Game Website</p>
+                    <p class="dev">Developed a responsive Memory Game  website using HTML, CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/memory-game/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/memory-game"><button class="sourcecode">Source Code</button></a>
+                    </div>
+                </div>
+                <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="./rockpaperscissor.png" alt="" style="border-radius: 10px; width: 100%; height: 300px;"  >
+                    <p class="comic">Rock Paper Scissor Game Website</p>
+                    <p class="dev">Developed a responsive Game Website using HTML CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/rockpaperscissor/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/rockpaperscissor"><button class="sourcecode">Source Code</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work3">
+                <div class="card1" data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="./dicegame.png" alt="" style="border-radius: 10px; width: 100%; height: 300px;"  >
+                    <p class="comic">Dice Game Game Website</p>
+                    <p class="dev">Developed a responsive Dice Game website using HTML, CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/dice-game/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/dice-game"><button class="sourcecode">Source Code</button></a>
+                    </div>
+                </div>
+                <div class="card1"data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1400">
+                    <img src="./Calculator.png" alt="" style="border-radius: 10px; width: 100%; height: 300px;"  >
+                    <p class="comic">Calculator Website</p>
+                    <p class="dev">Developed a responsive Calculator Website using HTML CSS and JavaScript</p>
+                    <div class="using">
+                        <button class="using1">HTML</button>
+                        <button class="using2">CSS</button>
+                        <button class="using3">Javascript</button>
+                    </div>
+                    <div class="view">
+                        <a class="a" href="https://ashwin14733.github.io/calculator/"><button class="viewdemo">View Demo</button></a>
+                        <a class="a" href="https://github.com/ashwin14733/calculator"><button class="sourcecode">Source Code</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+       <section id="contactmemain">
+        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1400">
+            <p class="aboutme">Contact Me</p>
+            <div class="bottomline"></div>
+        </div>
+        <div class="contactme">
+                <form id="contactform">
+                    <div class="mainname">
+                        <div data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1000">
+                            <p class="name">First Name:</p>
+                            <input class="firstname" type="text" placeholder="Enter Your First Name" id="firstname" >
+                        </div>
+                        <div data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1000">
+                            <p class="name">Last Name:</p>
+                            <input class="firstname" type="text" placeholder="Enter Your Last Name" id="lastname"  >
+                        </div>
+
+                    </div>
+                    <div class="mainname">
+                        <div data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1400">
+                            <p class="name">Mobile Number:</p>
+                            <input class="firstname" type="number" placeholder="Enter Your Mobile No:" id="mobilenumber" >
+                        </div>
+                        <div data-aos="zoom-out-up" data-aos-easing="linear" data-aos-duration="1400">
+                            <p class="name">Email Id:</p>
+                            <input class="firstname" type="email" placeholder="Enter Your Email Id" id="emailid" >
+                        </div>
+
+                    </div>
+                    <div class="messagebox" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear" data-aos-duration="1800">
+                        <textarea placeholder="Write Your Message..." class="textarea" rows="15" id="messagebox"></textarea>
+                        <button class="submit" type="submit" id="submitbtn" >Submit Your Message</button>
+                    </div>
+
+                </form>
+            <!-- <div class="contactleft">
+                <div class="contactleft1">
+                    <p class="name">First Name :</p>
+                    <input class="firstname" type="text" placeholder="Enter Your First Name" required>
+                </div>
+                <div class="contactleft1">
+                    <p class="name">Last Name :</p>
+                    <input class="firstname" type="text" placeholder="Enter Your Last Name">
+                </div>
+            </div>
+            <div class="contactright">
+                <div class="contactright1">
+                    <p class="name">Mobile Number:</p>
+                    <input class="firstname" type="number" placeholder="Enter Your First Name" required>
+                </div>
+                <div class="contactleft1">
+                    <p class="name">Email Id :</p>
+                    <input class="firstname" type="email" placeholder="Enter Your Last Name" required>
+                </div>
+                <div class="message">
+                    <p class="name">Write Message</p>
+                    <input class="write1" type="text" placeholder="Write Your Message...">
+                    <div class="submitbutton">
+                        <button class="submit">Submit Your Message</button>
+                    </div>
+                </div> 
+            </div> -->
+        </div>
+       </section>
+    </main>
+    <footer>
+        <div class="footermain">
+            <div class="footerleft">
+                <p>Copyrights</p>
+                <img src="Copyrights.png" alt="">
+                <p>Ashwin - All rights reserved | 2025</p>
+            </div>
+            <div class="footerright">
+                <a href="https://github.com/ashwin14733" target="_blank"><img src="Githubimage.png" alt="" width="20px"></a>
+                <a href="http://www.linkedin.com/in/ashwin-a-754074368" target="_blank" ><img src="Likedin.png" alt="" width="20px"></a>
+                <a href="https://www.instagram.com/mr._sinner_/" target="_blank"><img src="Instagram.png" alt="" width="20px"></a>
+                <a href=""><img src="Facebook.png" alt="" width="20px"></a>
+            </div>
+        </div>
+    </footer>
+     </div>
+    </div>
+
+
+      <script type="module">
+            
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+        import { getDatabase,ref,set,onValue,push,remove } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-database.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDaI9naOz6rCzThU3une_8uYQmfzBHaWzY",
+            authDomain: "portfolio-contact-info.firebaseapp.com",
+            projectId: "portfolio-contact-info",
+            storageBucket: "portfolio-contact-info.firebasestorage.app",
+            messagingSenderId: "812890770695",
+            appId: "1:812890770695:web:49ffe41cca986452ac89a2"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const databasename = getDatabase(app);
+        const collectioname = ref(databasename, "portfolio-contact-info",)
+
+
+        let firstname = document.getElementById("firstname");
+        let lastname = document.getElementById("lastname");
+        let mobilenumber = document.getElementById("mobilenumber");
+        let emailid = document.getElementById("emailid");
+        let messagebox = document.getElementById("messagebox");
+        let submitbtn = document.getElementById("submitbtn");
+
+        /*const darkswal = Swal.mixin({
+            background : "#1e1e1e",
+            color : "#fff",
+            confirmButtonColor : "#0dcaf0",
+            cancelButtonColor : "#d33",
+            buttonStyling : true,
+            showClass : {
+                popup : "animate__animated animate_fadeInDown"
+            },
+            hideClass : {
+                popup : "animate __ animated animate_fadeOutUp"
+            }
+
+        })*/
+
+        submitbtn.addEventListener("click", async (e)=>{
+            e.preventDefault();
+            //alert();
+
+            const namePattern = /^[A-Za-z\s]+$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^[0-9]{10}$/;;
+            //const landlinePattern = /^[0-9]{6,12}$/;
+
+
+            if (!firstname.value.trim() || !mobilenumber.value.trim() || !emailid.value.trim() || !messagebox.value.trim()) {
+            Swal.fire({
+                    icon: 'warning',
+                    title: 'Missing Information',
+                    text: 'Please fill in all required fields (Firstname, LastName, MobileNumber, EmailId)',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    color: '#ffffff',
+                    // backdrop: 'rgba(0, 0, 0, 0.8)'
+                    backdrop : 'rgba(0, 0, 0, 1)',
+                    confirmButtonColor : "#ffc107",
+                    confirmButtonText : "Okay"
+                });
+            return;
+            }
+
+            if (!namePattern.test(firstname.value) || !namePattern.test(lastname.value)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Name...',
+                    text: 'Names can only contain letters',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    color: '#ffffff',
+                    backdrop: 'rgba(0, 0, 0, 1)',
+                    confirmButtonColor : "#ffc107",
+                    confirmButtonText : "Okay"
+                });
+            return;
+            }
+
+            if (!phonePattern.test(mobilenumber.value)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Number...',
+                    text: 'Enter a valid mobile number.',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    color: '#ffffff',
+                    backdrop: 'rgba(0, 0, 0, 1)',
+                    confirmButtonColor : "#ffc107",
+                    confirmButtonText : "Okay"
+                });
+            return;
+            }
+
+            if (!emailPattern.test(emailid.value)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Email Id...',
+                    text: 'Enter a valid Email Address.',
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    color: '#ffffff',
+                    backdrop: 'rgba(0, 0, 0, 1)',
+                    confirmButtonColor : "#ffc107",
+                    confirmButtonText : "Okay"
+                });
+            darkswal.fire("Invalid Email", "Enter a valid email address.", "error");
+            return;
+            }
+
+
+            
+            let smallfirstname = firstname.value.toUpperCase().trim();
+            let smalllastname = lastname.value.toUpperCase().trim();
+            let smallmobilenumber = mobilenumber.value.trim();
+            let smallemailid = emailid.value.toUpperCase().trim();
+            let smallmessagebox = messagebox.value.toUpperCase().trim();
+
+
+            //console.log(smallfirstname);
+
+
+            let formattodb = {
+                dbfirstname : smallfirstname,
+                dblastname : smalllastname,
+                dbmobilenumber : smallmobilenumber,
+                dbemailid : smallemailid,
+                dbmessagebox : smallmessagebox
+            }
+
+            try{
+               await push(collectioname,formattodb)
+                Swal.fire({
+                    icon : "success",
+                    title : "Message Sent!!!",
+                    text : "Your Message Has been Successfully submitted.Thankyou!!!",
+                    showConfirmButton : false,
+                    timer : 3000,
+                    background: 'rgba(255, 255, 255, 0.1)',
+                    backdrop: 'rgba(0, 0, 0, 1)',
+                    color : "#ffffff"
+                })
+                clearfunction()
+
+            }catch(error){
+                console.log(error);
+                darkswal.fire("Error", "Something went wrong. Try again later.", "Error")
+            }
+            
+            
+
+            
+            function clearfunction(){
+                firstname.value = '';
+                lastname.value = '';
+                mobilenumber.value = '';
+                emailid.value = '';
+                messagebox.value = '';
+
+            }
+
+
+
+            
+        })
+
+
+
+      </script>
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/ripples.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+ 
+
+
+</body>
+</html>
+
+
