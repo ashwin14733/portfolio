@@ -206,9 +206,12 @@ a{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 160px 0px;
+    padding: 120px 0px;
     z-index: -2;
 
+}
+.abtleft{
+    padding-bottom: 60px;
 }
 .ashwinimage{
     /* width: 20%; */
@@ -466,7 +469,7 @@ a{
     background-color: white;
 }
 .using1{
-    font-family: 15px;
+    font-size: 15px;
     color: #FF6C22;
     padding: 10px 20px;
     background-color: #FFE3BB;
@@ -474,7 +477,7 @@ a{
     border: none;
 }
 .using2{
-    font-family: 15px;
+    font-size: 15px;
     color: #0077b6;
     padding: 10px 20px;
     background-color: #caf0f8;
@@ -482,13 +485,61 @@ a{
     border: none;
 }
 .using3{
-    font-family: 15px;
+    font-size: 15px;
     color: #fdc500;
     padding: 10px 20px;
     background-color: #fffae5;
     border-radius: 5px;
     border: none;
 
+}
+.reactjs{
+    font-size: 15px;
+    color: #0077b6;
+    padding: 10px 20px;
+    background-color: #E3F2FD;
+    border-radius: 5px;
+    border: none;
+}
+.mongodb{
+    font-size: 15px;
+    color: #4DB33D;
+    padding: 10px 20px;
+    background-color: #daf6de;
+    border-radius: 5px;
+    border: none;
+}
+.nodejs{
+    font-size: 15px;
+    color: #1B5E20;
+    padding: 10px 20px;
+    background-color: #E8F5E9;
+    border-radius: 5px;
+    border: none;
+}
+.expressjs{
+    font-size: 15px;
+    color: #4a4949;
+    padding: 10px 20px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    border: none;
+}
+.bootstrap{
+    font-size: 15px;
+    color: #5a189a;
+    padding: 10px 20px;
+    background-color: #F1EAFF;
+    border-radius: 5px;
+    border: none;
+}
+.spline{
+    font-size: 15px;
+    color: #1E1E2E;
+    padding: 10px 20px;
+    background-color: #E8E9FF;
+    border-radius: 5px;
+    border: none;
 }
 .view{
     display: flex;
